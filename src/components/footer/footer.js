@@ -14,22 +14,6 @@ export default function Footer() {
             <Box sx={styles.logo}>
               <Logo />
             </Box>
-            <Text as="p" sx={styles.copyright}>
-              <Link
-                path="https://mirzafaizan.me/"
-                target="_blank"
-                sx={{ textDecoration: 'none', color: 'primary' }}
-                >
-                Mirza Faizan Ejaz
-              </Link>{' '}
-              &amp;{' '}
-              <Link
-                path="https://imranmirza.me/"
-                target="_blank"
-                sx={{ textDecoration: 'none', color: 'primary' }}>
-                Mirza Imran Gul
-              </Link>
-            </Text>
           </Box>
         </Box>
       </Container>

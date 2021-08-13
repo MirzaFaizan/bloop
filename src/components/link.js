@@ -8,15 +8,14 @@ import { HiOutlineChevronRight } from 'react-icons/hi';
 export function NavLink({ path, label, children, ...rest }) {
   return (
     <MenuLink
-      to={path}
+      href={path}
       spy={true}
       offset={-70}
       smooth={true}
       duration={500}
       className="nav-item"
       activeClass="active"
-      {...rest}
-    >
+      {...rest}>
       {label}
     </MenuLink>
   );
@@ -35,7 +34,6 @@ export function Link({ path, label, children, ...rest }) {
     </A>
   );
 }
-
 
 export function LearnMore({ path, label, children, ...rest }) {
   return (

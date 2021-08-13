@@ -5,10 +5,8 @@ import { Link, NavLink, MainLink } from 'components/link';
 
 export default function Logo({ isSticky, footer, ...props }) {
   return (
-    <MainLink path="/" sx={styles.logo} {...props} >
-      <Text>
-🐶 fit bloop 🐱
-      </Text>
+    <MainLink path="/" sx={styles.logo} {...props}>
+      <Text>🐶 ZetPets Fit 🐱</Text>
     </MainLink>
   );
 }

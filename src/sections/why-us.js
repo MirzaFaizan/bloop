@@ -7,30 +7,27 @@ import { Box, Container, Heading, jsx, Text } from 'theme-ui';
 const data = [
   {
     id: 1,
-    tabTitle: 'Q2 2020',
+    tabTitle: 'Q4 2021',
     title: `Prototype Testing`,
-    description: `We plan to provide a prototype with basic features for a specific animal shelter for their pets to test the device and its usability.`,
-   
+    description: `Provide a prototype with basic features for a specific animal shelter for their pets to test the device and its usability.`,
   },
   {
     id: 2,
-    tabTitle: 'Q3 2020',
+    tabTitle: 'Q1 2022',
     title: `Beta Launch`,
-    description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
-   
+    description: `Deployment of the initial health kit for first customers. Production of first industry standard devices.`,
   },
   {
     id: 3,
-    tabTitle: 'Q4 2020',
+    tabTitle: 'Q2 2022',
     title: `Production Launch`,
-    description: `We plan to do App launch and Product offering in Estonia`,
-   
-  },{
+    description: `New app features launch and Product offering in Estonia. Outreach to big markets focusing our target.`,
+  },
+  {
     id: 4,
-    tabTitle: 'Q1 2021',
+    tabTitle: 'Q3 2022',
     title: ` Scalability`,
-    description: `We plan to add app features + possibility to partner up with pet assistant devices or other affiliates such as vet clinics, grooming salons and pet shops.`,
-    
+    description: `Possibility to partner up with pet assistant devices or other affiliates such as vet clinics, grooming salons and pet shops.`,
   },
 ];
 
@@ -39,18 +36,18 @@ const WhyUs = () => {
     <Box as="section" id="plan" sx={styles.section}>
       <Container>
         <Tabs sx={styles.tabs} animated={{ tabPane: true }}>
-          {data?.map((item) => (
+          {data?.map(item => (
             <TabPane
               key={item.id}
-              tab={<Heading as="h4">{`${item.tabTitle} ${item.title}`}</Heading>}
-            >
+              tab={
+                <Heading as="h4">{`${item.tabTitle} ${item.title}`}</Heading>
+              }>
               <Box>
                 <Heading>{item.title}</Heading>
                 <Text as="p" sx={styles.description}>
                   {item.description}
                 </Text>
               </Box>
-              
             </TabPane>
           ))}
         </Tabs>

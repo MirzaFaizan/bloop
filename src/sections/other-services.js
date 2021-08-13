@@ -48,7 +48,6 @@ const data = [
     Swipe and choose playdates for your pet.
     `,
   },
-  
 ];
 
 const OtherServices = () => {
@@ -57,11 +56,11 @@ const OtherServices = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Why your pet will love bloop"
-          description="awesome stuff to keep track of your pet"
+          title="Why your pet will love ZetPets Fit"
+          description="keep track of your pet's health and location"
         />
         <Box sx={styles.contentWrapper}>
-          {data?.map((item) => (
+          {data?.map(item => (
             <Service key={item.id} item={item} />
           ))}
         </Box>

@@ -11,6 +11,7 @@ const Banner = () => {
       <Container>
         <Box sx={styles.contentWrapper}>
           <SectionHeading
+            comingSoon
             sx={styles.heading}
             title="Know your pet’s Location, Health &amp; Fitness"
             description="Providing pet parents peace of mind...Love your pets as they love you."
@@ -69,5 +70,4 @@ const styles = {
       m: ['0 auto'],
     },
   },
- 
 };

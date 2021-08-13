@@ -27,7 +27,7 @@ export default function Header() {
                   </Box>
                   <Button variant="text" sx={styles.getStartedDesktop}>
                     <Link
-                      path={'mailto:hey@mirzafaizan.me'}
+                      path={'mailto:manuel@zetpets.fit'}
                       label={'Connect'}
                       target="_blank"
                       sx={{ textDecoration: 'none', color: 'primary' }}
@@ -36,7 +36,7 @@ export default function Header() {
                 </Box>
                 <Button variant="text" sx={styles.getStartedMobile}>
                   <Link
-                    path={'mailto:hey@mirzafaizan.me'}
+                    path={'mailto:manuel@zetpets.fit'}
                     label={'Connect'}
                     target="_blank"
                     sx={{ textDecoration: 'none', color: 'primary' }}

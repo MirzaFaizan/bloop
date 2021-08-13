@@ -2,13 +2,18 @@
 /** @jsx jsx */
 import { jsx, Box, Heading, Text } from 'theme-ui';
 
-const SectionHeading = ({ title, description, ...props }) => {
+const SectionHeading = ({ title, description, comingSoon, ...props }) => {
   return (
     <Box sx={styles.heading} {...props}>
       <Heading sx={styles.title}>{title}</Heading>
       <Text as="p" sx={styles.description}>
         {description}
       </Text>
+      {comingSoon && (
+        <Text as="h1" sx={styles.comingSoonStyles}>
+          {'(Coming soon...)'}
+        </Text>
+      )}
     </Box>
   );
 };
@@ -35,7 +40,15 @@ const styles = {
   },
   description: {
     color: 'heading',
-    fontSize: [1, null, null, 2],
+    fontSize: [4, null, null, 4],
+    lineHeight: [1.58, 1.58, 1.58, 2.2],
+    maxWidth: ['none', 'none', 'none', 'none', 490],
+    margin: '15px auto 0',
+  },
+
+  comingSoonStyles: {
+    color: 'heading',
+    fontSize: [8],
     lineHeight: [1.58, 1.58, 1.58, 2.2],
     maxWidth: ['none', 'none', 'none', 'none', 490],
     margin: '15px auto 0',
