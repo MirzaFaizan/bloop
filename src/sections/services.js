@@ -18,8 +18,8 @@ const data = [
   {
     id: 3,
     icon: icon2,
-    title: 'Download the application and set up your dog profile',
-    description: `Upload your dog’s photo, fill the profile page (age, breed and weight) of your dog to get the best experience.`,
+    title: 'Download the application and set up your pet profile',
+    description: `Upload your pet’s photo, fill the profile page (age, breed and weight) of your pet to get the best experience.`,
   },
   {
     id: 4,

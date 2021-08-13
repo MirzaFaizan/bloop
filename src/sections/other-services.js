@@ -1,14 +1,12 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container } from 'theme-ui';
-import SectionHeading from 'components/section-heading';
-import Service from 'components/cards/service';
 import icon4 from 'assets/images/icons/service4.png';
 import icon5 from 'assets/images/icons/service5.png';
 import icon6 from 'assets/images/icons/service6.png';
 import icon7 from 'assets/images/icons/service7.png';
-import icon8 from 'assets/images/icons/service8.png';
-import icon9 from 'assets/images/icons/service9.png';
+import Service from 'components/cards/service';
+import SectionHeading from 'components/section-heading';
+import { Box, Container, jsx } from 'theme-ui';
 
 const data = [
   {
@@ -36,7 +34,7 @@ const data = [
     title: 'Fitness',
     description: `Achieve recommended exercise goals for your specific pet.
     See distance travelled, minutes active and more.
-    Serve correct food portions recommended for your specific dog.
+    Serve correct food portions recommended for your specific pet.
     Celebrate Achievements
     .`,
   },
@@ -44,7 +42,7 @@ const data = [
     id: 4,
     icon: icon7,
     title: 'Play Dates',
-    description: `Find the nearest dog parks to your pet’s location.
+    description: `Find the nearest pet playgrounds to your pet’s location.
     Swipe and choose playdates for your pet.
     `,
   },
